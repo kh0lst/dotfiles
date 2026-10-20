@@ -173,7 +173,7 @@ if [[ -d "$HOME/.dotfiles/.git" ]]; then
     ( cd "$HOME/.dotfiles" && git pull)
 else
     [[ -a  "$HOME/.dotfiles" ]] && mv "$HOME/.dotfiles" "$HOME/.dotfiles.$(date +%s).bak" || true
-    GIT_SSH_COMMAND='ssh -o StrictHostKeyChecking=accept-new' git clone "git@github.com:glav-git/dotfiles.git" "$HOME/.dotfiles"
+    GIT_SSH_COMMAND='ssh -o StrictHostKeyChecking=accept-new' git clone "git@github.com:kh0lst/dotfiles.git" "$HOME/.dotfiles"
 fi
 
 [[ -f "$HOME/.dotfiles/.dotter/local.toml" ]] || echo 'packages = ["default"]' > "$HOME/.dotfiles/.dotter/local.toml"

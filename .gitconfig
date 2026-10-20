@@ -3,7 +3,7 @@
 [init]
 	defaultBranch = master
 [user]
-	name = glav-git
+	name = kh0lst
 	email = alexeyholostenko96@gmail.com
 ; TODO: move this to a template or whatever
 ; [includeIf "gitdir:~/w/**"]
