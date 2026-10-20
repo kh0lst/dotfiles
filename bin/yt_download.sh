@@ -1,3 +1,3 @@
-uvx --with secretstorage yt-dlp[default,curl-cffi] \
-  --cookies-from-browser "brave+gnomekeyring" \
+uvx yt-dlp[default,curl-cffi,secretstorage,deno] \
+  --cookies-from-browser "brave+gnomekeyring:~/.config/BraveSoftware/Brave-Origin" \
   $1
